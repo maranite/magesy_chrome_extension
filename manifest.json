@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Majesy Page Cleaner Extension",
+  "version": "1.0",
+  "content_scripts": [{
+	  "run_at" :"document_start",
+      "matches": ["*://majesy.com/*", "*://magesy.be/*"],	
+      "js": ["content.js"]
+  }],
+  "permissions": [
+	  "activeTab", 
+	  "http://beelink.in/*"
+  ]
+}
